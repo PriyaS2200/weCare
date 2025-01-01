@@ -7,34 +7,163 @@
     padding: 5px;
 }
 
-#inner-content {
+#wce-content {
     display: flex;
     justify-content: space-evenly;
-    gap: 5px;
 }
 
-#inner-content > div {
+#wce-content > div {
     display: flex;
     flex-direction: column;
     width: 18%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 1px solid black;
 }
 
-#inner-content > div:hover {
+#wce-content > div:hover {
     transform: scale(1.1);
 }
 
-#inner-content div h3 {
+#wce-content div h3 {
     text-align: center;
     line-height: 0;
 }
 
-#inner-content div p {
+#wce-content div p {
     color: grey;
     text-align: center;
 }
 
-#inner-content div h4 {
+#wce-content div h4 {
+    text-align: center;
+    line-height: 0;
+}
+
+#scp-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#scp-content > div {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 1px solid black;
+}
+
+#scp-content > div:hover {
+    transform: scale(1.1);
+}
+
+#scp-content div h3 {
+    text-align: center;
+    line-height: 0;
+}
+
+#scp-content div p {
+    color: grey;
+    text-align: center;
+}
+
+#scp-content div h4 {
+    text-align: center;
+    line-height: 0;
+}
+
+#is-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#is-content > div {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 1px solid black;
+}
+
+#is-content > div:hover {
+    transform: scale(1.1);
+}
+
+#is-content div h3 {
+    text-align: center;
+    line-height: 0;
+}
+
+#is-content div p {
+    color: grey;
+    text-align: center;
+}
+
+#is-content div h4 {
+    text-align: center;
+    line-height: 0;
+}
+
+#pr-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pr-content > div {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 1px solid black;
+    padding: 15px;
+}
+
+#pr-content > div:hover {
+    transform: scale(1.1);
+}
+
+#pr-content div h3 {
+    text-align: center;
+    line-height: 0;
+}
+
+#pr-content div p {
+    color: grey;
+    text-align: center;
+}
+
+#pr-content div h4 {
+    text-align: center;
+    line-height: 0;
+}
+
+#cc-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cc-content > div {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 1px solid black;
+}
+
+#cc-content > div:hover {
+    transform: scale(1.1);
+}
+
+#cc-content div h3 {
+    text-align: center;
+    line-height: 0;
+}
+
+#cc-content div p {
+    color: grey;
+    text-align: center;
+}
+
+#cc-content div h4 {
     text-align: center;
     line-height: 0;
 }
