@@ -1,0 +1,40 @@
+#main_img {
+    width: 100%;
+}
+
+.headings {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+#inner-content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+#inner-content > div {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#inner-content > div:hover {
+    transform: scale(1.1);
+}
+
+#inner-content div h3 {
+    text-align: center;
+    line-height: 0;
+}
+
+#inner-content div p {
+    color: grey;
+    text-align: center;
+}
+
+#inner-content div h4 {
+    text-align: center;
+    line-height: 0;
+}

@@ -1,7 +1,7 @@
 const navbar = `<div id="nav">
  <div id="nav_content">
  <img id="logo_img" src = "accessories/logo.png"></img>
- <h5>WE CARE</h5>
+ <h5 href= "index.html">WE CARE</h5>
  </div>
  <div id="nav_links">
  <a href="medicines.html">MEDICINES</a>
