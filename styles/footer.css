@@ -1,0 +1,38 @@
+#footer {
+    padding: 10px;
+}
+#footercontainer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-top: 1px solid lightgray;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+
+.footerCont {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footerHeading, .footerSubheading {
+    line-height: 0;
+}
+
+.footerSubheading{
+    color: gray;
+}
+
+#secCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-top: 1px solid lightgray;
+}
+
+#copyright {
+    color: gray;
+    font-weight: bold;
+}

@@ -167,3 +167,129 @@
     text-align: center;
     line-height: 0;
 }
+
+#fr-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fr-content > div {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 1px solid black;
+}
+
+#fr-content > div:hover {
+    transform: scale(1.1);
+}
+
+#fr-content div h3 {
+    text-align: center;
+    line-height: 0;
+}
+
+#fr-content div p {
+    color: grey;
+    text-align: center;
+}
+
+#fr-content div h4 {
+    text-align: center;
+    line-height: 0;
+}
+
+#vs-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#vs-content > div {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 1px solid black;
+}
+
+#vs-content > div:hover {
+    transform: scale(1.1);
+}
+
+#vs-content div h3 {
+    text-align: center;
+}
+
+#vs-content div p {
+    color: grey;
+    text-align: center;
+}
+
+#vs-content div h4 {
+    text-align: center;
+    line-height: 0;
+}
+
+#cs-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cs-content > div {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 1px solid black;
+}
+
+#cs-content > div:hover {
+    transform: scale(1.1);
+}
+
+#cs-content div h3 {
+    text-align: center;
+    line-height: 0;
+}
+
+#cs-content div p {
+    color: grey;
+    text-align: center;
+}
+
+#cs-content div h4 {
+    text-align: center;
+    line-height: 0;
+}
+
+#ip-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#ip-content > div {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 1px solid black;
+}
+
+#ip-content > div:hover {
+    transform: scale(1.1);
+}
+
+#ip-content div h3 {
+    text-align: center;
+}
+
+#ip-content div p {
+    color: grey;
+    text-align: center;
+}
+
+#ip-content div h4 {
+    text-align: center;
+    line-height: 0;
+}

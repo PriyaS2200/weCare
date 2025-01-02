@@ -33,7 +33,7 @@ body{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-h5 {
+#title {
     color: rgb(66, 182, 66);
     font-family: sans-serif;
 }

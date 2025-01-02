@@ -6,6 +6,10 @@ window.onload = function() {
     getis();
     getpr();
     getcc();
+    getfr();
+    getvs();
+    getcs();
+    getip();
 }
 
 async function getdata() {
@@ -148,3 +152,106 @@ function displaycc(data) {
     })
 }
 
+async function getfr() {
+    try{
+        let res = await fetch(`${baseUrl}/fr`);
+        let data = await res.json();
+        displayfr(data);
+    }catch{}
+}
+
+function displayfr(data) {
+    let content = document.getElementById("fr-content");
+    content.innerHTML = "";
+    data.map((element, i) => {
+        let card = document.createElement("div");
+        let image = document.createElement("img");
+        image.src = element.img;
+        let title = document.createElement("h3");
+        title.textContent = element.title;
+        let description = document.createElement("p");
+        description.textContent = element.description;
+        let price = document.createElement("h4");
+        price.textContent = `Price: ${element.price}`;
+        card.append(image, title, description, price);
+        content.append(card);
+    })
+}
+
+async function getvs() {
+    try{
+        let res = await fetch(`${baseUrl}/vs`);
+        let data = await res.json();
+        displayvs(data);
+    }catch{}
+}
+
+function displayvs(data) {
+    let content = document.getElementById("vs-content");
+    content.innerHTML = "";
+    data.map((element, i) => {
+        let card = document.createElement("div");
+        let image = document.createElement("img");
+        image.src = element.img;
+        let title = document.createElement("h3");
+        title.textContent = element.title;
+        let description = document.createElement("p");
+        description.textContent = element.description;
+        let price = document.createElement("h4");
+        price.textContent = `Price: ${element.price}`;
+        card.append(image, title, description, price);
+        content.append(card);
+    })
+}
+
+async function getcs() {
+    try{
+        let res = await fetch(`${baseUrl}/cs`);
+        let data = await res.json();
+        displaycs(data);
+    }catch{}
+}
+
+function displaycs(data) {
+    let content = document.getElementById("cs-content");
+    content.innerHTML = "";
+    data.map((element, i) => {
+        let card = document.createElement("div");
+        let image = document.createElement("img");
+        image.src = element.img;
+        let title = document.createElement("h3");
+        title.textContent = element.title;
+        let description = document.createElement("p");
+        description.textContent = element.description;
+        let price = document.createElement("h4");
+        price.textContent = `Price: ${element.price}`;
+        card.append(image, title, description, price);
+        content.append(card);
+    })
+}
+
+async function getip() {
+    try{
+        let res = await fetch(`${baseUrl}/ip`);
+        let data = await res.json();
+        displayip(data);
+    }catch{}
+}
+
+function displayip(data) {
+    let content = document.getElementById("ip-content");
+    content.innerHTML = "";
+    data.map((element, i) => {
+        let card = document.createElement("div");
+        let image = document.createElement("img");
+        image.src = element.img;
+        let title = document.createElement("h3");
+        title.textContent = element.title;
+        let description = document.createElement("p");
+        description.textContent = element.description;
+        let price = document.createElement("h4");
+        price.textContent = `Price: ${element.price}`;
+        card.append(image, title, description, price);
+        content.append(card);
+    })
+}
