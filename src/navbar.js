@@ -5,19 +5,20 @@ const navbar = `<div id="nav">
  </div>
  <div id="nav_links">
  <a href="medicines.html">MEDICINES</a>
-  <a href="labtests.html">LAB TESTS</a>
+ <a href="labtests.html">LAB TESTS</a>
  <a href="consultdoctors.html">CONSULT DOCTORS</a>
  </div>
  <div id="nav_innerContent">
-   <a href="index.html">Sign Up</a>
-  <a href="index.html">Login</a>
- <a href="cart.html">Cart</a>
-   <a href="index.html">Help</a>
+  <a href="index.html">Home</a>
+  <a href="signup.html">Sign Up</a>
+  <a href="login.html">Login</a>
+  <a href="cart.html">Cart</a>
+  <a href="help.html">Help</a>
  </div>
 </div>
 <div id="search_nav">
 <input type="text" id="search" placeholder= "Search for Medicines and Health Products">
-<button>Quick Order </button>
+<button id="navbtn">Quick Order </button>
 </div>`
 
 document.getElementById("navbar").innerHTML = navbar;

@@ -1,0 +1,53 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(179, 173, 173);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 25px;
+    margin: 50px;
+    gap: 20px; 
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(224, 106, 63);
+    text-shadow: 1px 2px 5px lightcoral;
+}
+
+#username, #email, #password, #mobile {
+    padding: 10px;
+    color: gray;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+select {
+    padding: 8px;
+    width: 35%;
+    margin-left: 70px;
+    border: none;
+    color: gray;
+    font-family: cursive;
+    font-weight: bold;
+    background-color: rgb(230, 228, 228);
+    border-radius: 5px;
+}
+
+#submit {
+    font-family: cursive;
+    font-weight: bold;
+    background-color: rgb(224, 106, 63);
+    font-size: 16px;
+    color: whitesmoke;
+    width:100px;
+}
+
+#submit:hover {
+    color: rgb(224, 106, 63);
+    background-color: whitesmoke;
+}
+

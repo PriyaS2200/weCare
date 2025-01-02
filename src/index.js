@@ -35,7 +35,9 @@ function displayData(data) {
         price.textContent = `Price: ${element.price}`;
         let review = document.createElement("h4");
         review.textContent = `Review: ${element.reviews}`;
-        card.append(image, title, description, price, review);
+        let add = document.createElement("button");
+        add.textContent = "Add to Cart";
+        card.append(image, title, description, price, review, add);
         content.append(card);
     })
 }
@@ -63,7 +65,9 @@ function displayscp(data) {
         price.textContent = `Price: ${element.price}`;
         let review = document.createElement("h4");
         review.textContent = `Review: ${element.reviews}`;
-        card.append(image, title, description, price, review);
+        let add = document.createElement("button");
+        add.textContent = "Add to Cart";
+        card.append(image, title, description, price, review,add);
         content.append(card);
     })
 }
@@ -91,7 +95,9 @@ function displayis(data) {
         price.textContent = `Price: ${element.price}`;
         let review = document.createElement("h4");
         review.textContent = `Review: ${element.reviews}`;
-        card.append(image, title, description, price, review);
+        let add = document.createElement("button");
+        add.textContent = "Add to Cart";
+        card.append(image, title, description, price, review,add);
         content.append(card);
     })
 }
@@ -119,7 +125,9 @@ function displaypr(data) {
         price.textContent = `Price: ${element.price}`;
         let review = document.createElement("h4");
         review.textContent = `Review: ${element.reviews}`;
-        card.append(image, title, description, price, review);
+        let add = document.createElement("button");
+        add.textContent = "Add to Cart";
+        card.append(image, title, description, price, review,add);
         content.append(card);
     })
 }
@@ -147,7 +155,9 @@ function displaycc(data) {
         price.textContent = `Price: ${element.price}`;
         let review = document.createElement("h4");
         review.textContent = `Review: ${element.reviews}`;
-        card.append(image, title, description, price, review);
+        let add = document.createElement("button");
+        add.textContent = "Add to Cart";
+        card.append(image, title, description, price, review,add);
         content.append(card);
     })
 }
@@ -173,7 +183,9 @@ function displayfr(data) {
         description.textContent = element.description;
         let price = document.createElement("h4");
         price.textContent = `Price: ${element.price}`;
-        card.append(image, title, description, price);
+        let add = document.createElement("button");
+        add.textContent = "Add to Cart";
+        card.append(image, title, description, price,add);
         content.append(card);
     })
 }
@@ -199,7 +211,9 @@ function displayvs(data) {
         description.textContent = element.description;
         let price = document.createElement("h4");
         price.textContent = `Price: ${element.price}`;
-        card.append(image, title, description, price);
+        let add = document.createElement("button");
+        add.textContent = "Add to Cart";
+        card.append(image, title, description, price,add);
         content.append(card);
     })
 }
@@ -225,7 +239,9 @@ function displaycs(data) {
         description.textContent = element.description;
         let price = document.createElement("h4");
         price.textContent = `Price: ${element.price}`;
-        card.append(image, title, description, price);
+        let add = document.createElement("button");
+        add.textContent = "Add to Cart";
+        card.append(image, title, description, price,add);
         content.append(card);
     })
 }
@@ -251,7 +267,9 @@ function displayip(data) {
         description.textContent = element.description;
         let price = document.createElement("h4");
         price.textContent = `Price: ${element.price}`;
-        card.append(image, title, description, price);
+        let add = document.createElement("button");
+        add.textContent = "Add to Cart";
+        card.append(image, title, description, price,add);
         content.append(card);
     })
 }
