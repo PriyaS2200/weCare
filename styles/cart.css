@@ -1,0 +1,42 @@
+#cartContainer {
+    height: 500px;
+    padding: 50px;
+}
+
+#cartContainer > div {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 1px solid black;
+    padding-bottom: 8px;
+}
+
+#cartContainer > div:hover {
+    transform: scale(1.1);
+}
+
+#cartContainer div h3 {
+    text-align: center;
+    line-height: 0;
+}
+
+#cartContainer div p {
+    color: grey;
+    text-align: center;
+}
+
+#cartContainer div h4 {
+    text-align: center;
+    line-height: 0;
+}
+
+div button {
+    width: 150px;
+    padding: 5px 10px;
+    border: none;
+    background-color:teal;
+    color: whitesmoke;
+    border-radius: 3px;
+    margin:auto;
+}

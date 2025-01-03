@@ -18,16 +18,16 @@ form.addEventListener("submit", function () {
         /// user present
         // check for password
         if(user[0].password == password){
-            alert("Login Sucess...");
+            alert("Login Success");
             localStorage.setItem("loginData", JSON.stringify(user[0]))
-            window.location.href = "cart.html"
+            window.location.href = "index.html"
         }else{
             alert("Password is wrong, please login with right password")
         }
         
       } else {
         // user not present
-        alert("User not registred, Please signup....");
+        alert("User not registered, Please signup....");
         window.location.href = "signup.html"
         
       }

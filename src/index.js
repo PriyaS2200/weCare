@@ -1,5 +1,6 @@
 import { baseUrl } from "./baseurl.js";
 
+let loginData = JSON.parse(localStorage.getItem("loginData"));
 window.onload = function() {
     getdata();
     getscp();
@@ -35,12 +36,50 @@ function displayData(data) {
         price.textContent = `Price: ${element.price}`;
         let review = document.createElement("h4");
         review.textContent = `Review: ${element.reviews}`;
-        let add = document.createElement("button");
-        add.textContent = "Add to Cart";
-        card.append(image, title, description, price, review, add);
+        let addCart = document.createElement("button");
+        addCart.textContent = "Add to Cart";
+        addCart.addEventListener ("click", function () {
+            event.preventDefault();
+            addToCart(element);
+        })
+        card.append(image, title, description, price, review, addCart);
         content.append(card);
     })
 }
+
+async function addToCart(element) {
+    const cartData = {
+        title: element.title,
+        description: element.description,
+        price: element.price,
+        review: element.reviews,
+        img: element.img
+    };
+    fetch(`${baseUrl}/users`)
+    .then((res) => res.json())
+    .then((data) => {
+      let user = data.filter((el, i) => { el.id == loginData.id});
+        if(loginData.length != 0){
+            let id = loginData.id;
+            fetch(`${baseUrl}/users/${id}`, {
+                method: 'PATCH',
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify({product:cartData})
+            }).then(function() {
+                alert("Product successfully added");
+                window.location.href = "cart.html";
+            })
+        }else{
+            alert("Login before adding to cart");
+            window.location.href = "login.html";
+        }
+    }).catch((err)=>{
+        console.log(err);
+    })
+    
+ }
 
 async function getscp() {
     try{
@@ -65,9 +104,13 @@ function displayscp(data) {
         price.textContent = `Price: ${element.price}`;
         let review = document.createElement("h4");
         review.textContent = `Review: ${element.reviews}`;
-        let add = document.createElement("button");
-        add.textContent = "Add to Cart";
-        card.append(image, title, description, price, review,add);
+        let addCart = document.createElement("button");
+        addCart.textContent = "Add to Cart";
+        addCart.addEventListener ("click", function () {
+            event.preventDefault();
+            addToCart(element);
+        })
+        card.append(image, title, description, price, review,addCart);
         content.append(card);
     })
 }
@@ -95,9 +138,13 @@ function displayis(data) {
         price.textContent = `Price: ${element.price}`;
         let review = document.createElement("h4");
         review.textContent = `Review: ${element.reviews}`;
-        let add = document.createElement("button");
-        add.textContent = "Add to Cart";
-        card.append(image, title, description, price, review,add);
+        let addCart = document.createElement("button");
+        addCart.textContent = "Add to Cart";
+        addCart.addEventListener ("click", function () {
+            event.preventDefault();
+            addToCart(element);
+        })
+        card.append(image, title, description, price, review,addCart);
         content.append(card);
     })
 }
@@ -125,9 +172,13 @@ function displaypr(data) {
         price.textContent = `Price: ${element.price}`;
         let review = document.createElement("h4");
         review.textContent = `Review: ${element.reviews}`;
-        let add = document.createElement("button");
-        add.textContent = "Add to Cart";
-        card.append(image, title, description, price, review,add);
+        let addCart = document.createElement("button");
+        addCart.textContent = "Add to Cart";
+        addCart.addEventListener ("click", function () {
+            event.preventDefault();
+            addToCart(element);
+        })
+        card.append(image, title, description, price, review,addCart);
         content.append(card);
     })
 }
@@ -155,9 +206,13 @@ function displaycc(data) {
         price.textContent = `Price: ${element.price}`;
         let review = document.createElement("h4");
         review.textContent = `Review: ${element.reviews}`;
-        let add = document.createElement("button");
-        add.textContent = "Add to Cart";
-        card.append(image, title, description, price, review,add);
+        let addCart = document.createElement("button");
+        addCart.textContent = "Add to Cart";
+        addCart.addEventListener ("click", function () {
+            event.preventDefault();
+            addToCart(element);
+        })
+        card.append(image, title, description, price, review,addCart);
         content.append(card);
     })
 }
@@ -183,9 +238,13 @@ function displayfr(data) {
         description.textContent = element.description;
         let price = document.createElement("h4");
         price.textContent = `Price: ${element.price}`;
-        let add = document.createElement("button");
-        add.textContent = "Add to Cart";
-        card.append(image, title, description, price,add);
+        let addCart = document.createElement("button");
+        addCart.textContent = "Add to Cart";
+        addCart.addEventListener ("click", function () {
+            event.preventDefault();
+            addToCart(element);
+        })
+        card.append(image, title, description, price,addCart);
         content.append(card);
     })
 }
@@ -211,9 +270,13 @@ function displayvs(data) {
         description.textContent = element.description;
         let price = document.createElement("h4");
         price.textContent = `Price: ${element.price}`;
-        let add = document.createElement("button");
-        add.textContent = "Add to Cart";
-        card.append(image, title, description, price,add);
+        let addCart = document.createElement("button");
+        addCart.textContent = "Add to Cart";
+        addCart.addEventListener ("click", function () {
+            event.preventDefault();
+            addToCart(element);
+        })
+        card.append(image, title, description, price,addCart);
         content.append(card);
     })
 }
@@ -239,9 +302,13 @@ function displaycs(data) {
         description.textContent = element.description;
         let price = document.createElement("h4");
         price.textContent = `Price: ${element.price}`;
-        let add = document.createElement("button");
-        add.textContent = "Add to Cart";
-        card.append(image, title, description, price,add);
+        let addCart = document.createElement("button");
+        addCart.textContent = "Add to Cart";
+        addCart.addEventListener ("click", function () {
+            event.preventDefault();
+            addToCart(element);
+        })
+        card.append(image, title, description, price,addCart);
         content.append(card);
     })
 }
@@ -267,9 +334,13 @@ function displayip(data) {
         description.textContent = element.description;
         let price = document.createElement("h4");
         price.textContent = `Price: ${element.price}`;
-        let add = document.createElement("button");
-        add.textContent = "Add to Cart";
-        card.append(image, title, description, price,add);
+        let addCart = document.createElement("button");
+        addCart.textContent = "Add to Cart";
+        addCart.addEventListener ("click", function () {
+            event.preventDefault();
+            addToCart(element);
+        })
+        card.append(image, title, description, price,addCart);
         content.append(card);
     })
 }
